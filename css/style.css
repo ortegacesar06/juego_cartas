@@ -1,0 +1,288 @@
+/* MAIN STYLES */
+html, 
+body{
+    background: #252525;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus,
+.btn-check:focus+.btn-secondary, .btn-secondary:focus,
+.btn-check:focus+.btn-danger, .btn-danger:focus{
+    box-shadow: none;
+}
+
+.btn-secondary{
+    background-color: #353535;
+    border-color: #353535;
+    border-bottom: 4px solid #1a1a1a;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active{
+    background-color: #272727;
+    border-color: #141414;
+    color: #fff;
+}
+
+.btn-primary{
+    background-color: #DAA520;
+    border-color: #DAA520;
+    border-bottom: 4px solid #836314;
+    color: #1b1b1b;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+    background-color: #bd901d;
+    border-color: #6b5110;
+    color: #1b1b1b;
+}
+
+.btn-danger{
+    background-color: #da2020;
+    border-color: #da2020;
+    border-bottom: 4px solid #aa1717;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active{
+    background-color: #b61c1c;
+    border-color: #851212;
+}
+
+.btn-danger.disabled, .btn-danger:disabled,
+.btn-primary.disabled, .btn-primary:disabled{
+    background-color: #353535;
+    border-color: #353535;
+    color: #1b1b1b;
+}
+
+.modal-content{
+    border-radius: 15px;
+}
+
+.modal-footer{
+    justify-content: center;
+    border: none;
+    padding-bottom: 40px;
+}
+
+.modal_info{
+    padding: 40px 25px 0px;
+}
+
+.modal_info img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.modal_info h4{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.modal_info h4.lose{
+    color: red;
+}
+
+.modal_info h4.winner{
+    color: #13d04d;
+}
+
+.modal-backdrop{
+    background-color: #404040;
+}
+
+.modal-backdrop.show {
+    opacity: .7;
+}
+
+.toast{
+    background-color: #ffc107;
+}
+
+.toast-header{
+    background-color: #ffc107;
+}
+
+.margin_bottom{
+    margin-bottom: 70px;
+}
+
+.form-switch{
+    display: inline-block;
+    margin: 0 auto;
+}
+.form-switch label{
+    color: #DAA520;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.form-switch .form-check-input{
+    background-color: #353535;
+}
+
+.form-check-input:checked{
+    background-color: #DAA520;
+    border-color: #DAA520;
+}
+
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgb(253 183 13 / 25%);
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background-color: #1b1b1b;
+    border-right: 6px solid #161616;
+    padding: 70px 20px;
+}
+
+#main_content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 280px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.info_box{
+    background-color: #353535;
+    color: #DAA520;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 4px solid #131212;
+}
+
+.info_box .txt{
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.info_box .txt.big{
+    font-size: 25px;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.card-number{
+    color: #353535;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.card-number.active{
+    color: #DAA520;
+}
+
+.card-base{
+    width: 180px;
+    height: 240px;
+    background: #353535;
+    background-image: url(../img/bg_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    outline-offset: 8px;
+    outline-width: 4px;
+    outline-style: dashed;
+    outline-color: #353535;
+    padding: 15px;
+}
+
+.card-base.active{
+    outline-color: #DAA520;
+}
+
+#menu .card-base{
+    background-color: #252525;
+    outline-color: #252525;
+}
+
+.card-base-wrap{
+    position: relative;
+    height: 100%;
+}
+
+.playing_card{
+    position: absolute;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.back,
+.front{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: 103%;
+    background-repeat: no-repeat;
+    background-position: center;box-shadow: 5px 10px 20px -5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 10px 20px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 10px 20px -5px rgba(0,0,0,0.4);
+    z-index: 10;
+    transition: .5s;
+}
+
+.front{    
+    backface-visibility: hidden;  
+    transform: perspective(1000px) rotateY(-180deg);
+}
+
+.back{
+    backface-visibility: hidden;    
+    transform: perspective(1000px) rotateY(0deg);
+    background-image: url(../img/reverso.png);
+}
+
+.playing_card.flipped .front{
+    transform: perspective(1000px) rotateY(0);
+}
+
+.playing_card.flipped .back{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
